@@ -1,0 +1,221 @@
+body {
+    background-image: url('/staticfile/images/bg.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+h1 {
+    text-align: center;
+}
+
+.card {
+    position:relative;
+    width: 100;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(20px);
+    box-shadow: 2px 2px 15px rbga(0 , 0, 0.-5);
+    margin: 0 auto 20px auto !important;
+    justify-content: center;
+    color: #ffffff;
+    font-family: sans-serif;
+    
+}
+
+.card:hover {
+    box-shadow: 0px 5px 25px 0px rgb(232, 231, 231);
+    /* transform: scale(1.04); */
+    
+    border-radius: 25px;
+    transform: translateY(-6px);
+    transition: all 0.42s;
+} 
+
+.lst{
+    list-style-type: none;
+    margin-right: 10px;
+    
+}
+
+.cardinRow {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.imag {
+    height: 280px;
+    width: 300px;
+    border-radius: 15px;
+    padding: 5px;
+    align-items: center;
+}
+.imag:hover{
+    border-radius: 25px;
+    transition: all 0.12s;
+}
+.buttn {
+    float: right;
+    background-color: rgb(2, 22, 149);
+    color: white;
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    vertical-align: middle;
+    width: 100px;
+}
+.buttn:hover{
+    background-color: #ffffff;
+    color: black;
+}
+
+.modebutton {
+    position: absolute;
+    bottom: 0%;
+    float: right;
+}
+.dark-mode {
+    background-color: rgb(236, 228, 228);
+    color: rgb(32, 30, 30);
+}
+.navbaar{
+    height: 90px;
+    max-width: 100%;
+    margin-top: 0px;
+    margin-block: 0px;
+    background-color: rgb(234, 148, 19);
+    color: black;
+    padding: 0%;
+    margin: 0%;
+}
+h3{
+    color: white;
+    display: inline;
+    font-size: 55px;
+    text-align: center;
+    position: relative ;
+    bottom: 23px;
+    right: -320px;
+    font-family: sans-serif;
+}
+.du{
+    display: inline;
+    position: relative;
+    float: right;
+    margin-top: 3px;
+    margin-right: 10px;
+
+}
+.buttn2{
+    float: right;
+    background-color: rgb(119, 171, 250);
+    color: white;
+    border-radius: 10px;
+    padding: 6px;
+    margin: 8px;
+    font-size: 16px;
+    vertical-align: middle;
+    width: 120px;
+}
+
+.buttn2:hover{
+    background-color: #ffffff;
+    color: black;}
+
+
+
+
+
+
+
+
+
+
+/* body {
+  background-color: rgb(38, 38, 38);
+  color: rgb(208, 196, 196);
+  margin: 0%;
+  padding: 0%;
+}
+
+h1 {
+  text-align: center;
+}
+
+.card {
+  background: #dfdcdc;
+  color: black;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.14);
+  border-radius: 5px;
+  height: 100%;
+  margin: 0 20px !important;
+}
+
+.card:hover {
+  box-shadow: 0px 5px 16px 0px rgb(93, 92, 92);
+  border-radius: 25px;
+  transform: translateY(-6px);
+  transition: all 0.42s;
+}
+
+.lst {
+  list-style-type: none;
+  margin-right: 10px;
+}
+
+.cardinRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.imag {
+  height: 280px;
+  width: 300px;
+  border-radius: 15px;
+  padding: 5px;
+  align-items: center;
+}
+.imag:hover {
+  border-radius: 25px;
+  transition: all 0.12s;
+}
+.buttn {
+  float: right;
+  background-color: black;
+  color: white;
+  border-radius: 15px;
+  padding: 10px;
+  font-size: 15px;
+  vertical-align: middle;
+  width: 100px;
+}
+.buttn:hover {
+  background-color: #f3eeee;
+  color: black;
+}
+
+.modebutton {
+  position: absolute;
+  bottom: 0%;
+  float: right;
+}
+.dark-mode {
+  background-color: rgb(236, 228, 228);
+  color: rgb(32, 30, 30);
+}
+.navbaar {
+  height: 70px;
+  max-width: 100%;
+  margin-top: 0px;
+  margin-block: 0px;
+  background-color: rgb(233, 233, 153);
+  color: black;
+  padding: 0%;
+  margin: 0%;
+} */

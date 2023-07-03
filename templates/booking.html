@@ -1,0 +1,89 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title >Booking Page</title>
+    
+    <link rel="stylesheet" href="{% static 'css/book.css' %}" />
+  </head>
+  <body class="bodies">
+    <div class="colever">
+      {% if messages %}
+      <div
+        class="alert alerts-succ midd"
+        role="alert">
+        {% for i in messages %} {{i}}
+        <a href="{% url 'home' %}" class="alert-link">Go to Homepage</a>
+        {% endfor %}
+      </div>
+      {% endif %}
+
+      <div class="cont" style="width: 60vh">
+        <header>
+          <h1 style="color: white">Book {{Page}}</h1>
+        </header>
+        <form method="POST">
+          {% csrf_token %}
+
+          <div>
+            <label for="date">Date</label>
+            <input type="date" name="day" id="date" placeholder="Enter date" />
+          </div>
+          <br />
+
+          <div>
+            <label for="time">Time Slot:</label>
+            <select class="form-group" id="time" name="time" required>
+              <option value="Morning">Morning</option>
+              <option value="Evening">Evening</option>
+            </select>
+          </div>
+          <br />
+
+          <div>
+            <label for="type">Event Type:</label>
+            <select class="form-group" id="type" name="eventType" required>
+              <option value="Academic">Academic</option>
+              <option value="Cultural">Cultural</option>
+            </select>
+          </div>
+          <br />
+
+          <div>
+            <label for="description">Event Description:</label>
+            <textarea
+              class="form-group"
+              id="description"
+              name="describe"
+              rows="4"
+              cols="30"
+              required
+            ></textarea>
+          </div>
+          <br />
+
+          <button type="submit">Book Now</button>
+        </form>
+        <br /><br />
+        <footer style="color: white">&copy; <b>NOTE:</b>*In order to book the seminar hall for both time slots (9:30 AM to 4:30 PM) or booking after 4:30 PM ,
+          you must obtain specific and prior permission from the principal, 30 Days prior of the event. </footer>
+        <p class="alert"></p>
+      </div>
+    </div>
+
+    <script>
+      // Get current date and add 30 days to it
+      var minDate = new Date();
+      minDate.setDate(minDate.getDate() + 30);
+
+      // Format the minimum date for input element
+      var minDateString = minDate.toISOString().split("T")[0];
+
+      // Set the minimum date for the date input element
+      document.getElementById("date").min = minDateString;
+    </script>
+  </body>
+</html>

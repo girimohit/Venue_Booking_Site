@@ -1,0 +1,75 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration</title>
+    
+    <link rel="stylesheet" href="{% static 'css\login.css' %}" />
+  </head>
+  <body>
+    <div class="colever">
+      {% if messages %}
+      <div class="alert alerts-succ midd" role="alert">
+        {% for i in messages %} {{i}}
+        <a href="{% url 'home' %}" class="alert-link">Go to Homepage</a>
+        {% endfor %}
+      </div>
+      {% endif %}
+
+      <div class="containe">
+        <h2 style="color: white"><b>REGISTER</b></h2>
+        <form method="POST">
+          {% csrf_token %}
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input
+              type="text"
+              id="username"
+              name="USERNAME"
+              placeholder="Enter Username"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter Your Email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Enter Password"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="confirm_password">Confirm Password</label>
+            <input
+              type="password"
+              id="confirm_password"
+              name="confirm_password"
+              placeholder="Enter Password Again"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <button type="submit">Register</button>
+          </div>
+
+          <div class="bottom-links">
+            {% comment %} <span class="separator">|</span> {% endcomment %}
+            <a href="{% url 'Login Page' %}">Already have an account? Login</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

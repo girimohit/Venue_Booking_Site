@@ -1,0 +1,230 @@
+body {
+  background-image: url('/staticfile/images/bg.webp');
+  /* url('https://wallpaperaccess.com/full/1489184.jpg'); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;}
+
+h1{
+  color: white;
+  margin-left: 8px;
+}
+  .navbaar{
+    height: 90px;
+    max-width: 100%;
+    margin-top: 0px;
+    margin-block: 0px;
+    background-color: rgb(234, 148, 19);
+    color: black;
+    padding: 0%;
+    margin: 0%;
+}
+h3{
+    color: white;
+    display: inline;
+    font-size: 55px;
+    text-align: center;
+    position: relative ;
+    bottom: 23px;
+    right: -320px;
+    font-family: sans-serif;
+}
+.du{
+    display: inline;
+    position: relative;
+    float: right;
+    margin-top: 3px;
+    margin-right: 10px;
+}
+
+table{
+    height: fit-content;
+     margin-left: 3%;
+}
+
+th,
+td {
+  border-radius: 2px;
+  padding: 5px;
+  min-width: 25vh;
+}
+
+td {
+  background-color: rgb(195, 201, 201);
+  text-align: center;
+  
+}
+
+th {
+  background-color: rgb(33, 33, 33);
+  color: white;
+}
+
+.buttn {
+  float: right;
+  background-color: black;
+  color: white;
+  border-radius: 15px;
+  padding: 1px;
+  font-size: 15px;
+  vertical-align: middle;
+  width: 50px;
+}
+
+.buttn:hover {
+  background-color: #f3eeee;
+  color: black;
+}
+
+
+.buttn2{
+  float: right;
+  background-color: rgb(119, 171, 250);
+  color: white;
+  border-radius: 10px;
+  padding: 6px;
+  margin: 8px;
+  font-size: 16px;
+  vertical-align: middle;
+  width: 120px;
+}
+
+.buttn2:hover{
+  background-color: #ffffff;
+  color: black;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .head {
+  background-color: rgb(37, 183, 183);
+}
+
+.tble-div {
+  display: flex;
+  flex-direction: row;
+}
+
+table{
+    height: fit-content;
+    margin-left: 3%;
+}
+
+th,
+td {
+  border-radius: 5px;
+  padding: 5px;
+  min-width: 11vh;
+}
+
+td {
+  background-color: rgb(195, 201, 201);
+  text-align: center;
+  
+}
+
+th {
+  background-color: rgb(37, 38, 38);
+  color: white;
+}
+
+.buttn {
+  float: right;
+  background-color: black;
+  color: white;
+  border-radius: 15px;
+  padding: 1px;
+  font-size: 15px;
+  vertical-align: middle;
+  width: 50px;
+}
+
+.buttn:hover {
+  background-color: #f3eeee;
+  color: black;
+} */

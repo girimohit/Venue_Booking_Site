@@ -1,0 +1,232 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'css/history.css' %}" />
+    <title>History</title>
+  </head>
+  <body>
+    <div class="navbaar">
+      <img
+        src="{% static 'images/DSC_logo.png' %}"
+        alt="image..."
+        width="86"
+        height="86"
+        alt=""
+      />
+
+      <h3>DYAL SINGH COLLEGE</h3>
+      <div class="du">
+        <img src="{% static 'images/DU_logo.png' %}" width="86" height="86" />
+      </div>
+    </div>
+
+    <div>
+      <button
+        class="buttn2"
+        onclick="window.location.href='{% url 'home' %}'"
+      >
+        Home
+      </button>
+    </div>
+
+    <h1>History</h1>
+
+    <div class="tble-div">
+      <table border="1">
+        <tr class="head">
+          <th colspan="4"><h2>Auditorium</h2></th>
+        </tr>
+        <tr>
+          <th>Date</th>
+          <th>Time</th>
+          <th>Description</th>
+          <th>Action</th>
+        </tr>
+        {% if bookAudi %} {% for i in bookAudi %}
+        <tr>
+          <td>{{ i.day }}</td>
+          <td>{{ i.time }}</td>
+          <td>{{ i.describe }}</td>
+          <td><a href="deleteAudi/{{i.id}}">Delete</a></td>
+        </tr>
+        {% endfor %} {% else %}
+        <td colspan="4">No Bookings</td>
+        {% endif %}
+      </table>
+      <br /><br /><br />
+      <table border="1">
+        <tr class="head">
+          <th colspan="4"><h2>Amphitheatre</h2></th>
+        </tr>
+        <tr>
+          <th>Date</th>
+          <th>Time</th>
+          <th>Description</th>
+          <th>Action</th>
+        </tr>
+        {% if bookAmphi %} {% for i in bookAmphi %}
+        <tr>
+          <td>{{ i.day }}</td>
+          <td>{{ i.time }}</td>
+          <td>{{ i.describe }}</td>
+          <td><a href="deleteAmphi/{{i.id}}">Delete</a></td>
+        </tr>
+        {% endfor %} {% else %}
+        <td colspan="4">No Bookings</td>
+        {% endif %}
+      </table>
+      <br /><br /><br />
+      <table border="1">
+        <tr class="head">
+          <th colspan="4"><h2>Seminar Hall</h2></th>
+        </tr>
+        <tr>
+          <th>Date</th>
+          <th>Time</th>
+          <th>Description</th>
+          <th>Action</th>
+        </tr>
+        {% if bookSemi %} {% for i in bookSemi %}
+        <tr>
+          <td>{{ i.day }}</td>
+          <td>{{ i.time }}</td>
+          <td>{{ i.describe }}</td>
+          <td><a href="deleteSemi/{{i.id}}">Delete</a></td>
+        </tr>
+        {% endfor %} {% else %}
+        <td colspan="4">No Bookings</td>
+        {% endif %}
+      </table>
+      <br /><br /><br />
+      <table border="1">
+        <tr class="head">
+          <th colspan="4"><h2>Sports Ground</h2></th>
+        </tr>
+        <tr>
+          <th>Date</th>
+          <th>Time</th>
+          <th>Description</th>
+          <th>Action</th>
+        </tr>
+        {% if bookGround %} {% for i in bookGround %}
+        <tr>
+          <td>{{ i.day }}</td>
+          <td>{{ i.time }}</td>
+          <td>{{ i.describe }}</td>
+          <td><a href="deleteGround/{{i.id}}">Delete</a></td>
+        </tr>
+        {% endfor %} {% else %}
+        <td colspan="4">No Bookings</td>
+        {% endif %}
+      </table>
+    </div>
+  </body>
+</html>
+
+{% comment %} {% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'css/history.css' %}" />
+    <title>History</title>
+  </head>
+  <body>
+    <h1>History</h1>
+
+    <div class="tble-div">
+      <table border="1">
+        <tr class="head">
+          <th colspan="4"><h2>Auditorium</h2></th>
+        </tr>
+        <tr>
+          <th>Date</th>
+          <th>Time</th>
+          <th>Description</th>
+          <th>Action</th>
+        </tr>
+        {% if bookAudi %} {% for i in bookAudi %}
+        <tr>
+          <td>{{ i.day }}</td>
+          <td>{{ i.time }}</td>
+          <td>{{ i.describe }}</td>
+          <td><a href="delete/{{i.id}}">Delete</a></td>
+        </tr>
+        {% endfor %} {% else %}
+        <td colspan="4">No Bookings</td>
+        {% endif %}
+      </table>
+
+      <table border="1">
+        <tr class="head">
+          <th colspan="4"><h2>Amphitheatre</h2></th>
+        </tr>
+        <tr>
+          <th>Date</th>
+          <th>Time</th>
+          <th>Description</th>
+          <th>Action</th>
+        </tr>
+        {% if bookAmphi %} {% for i in bookAmphi %}
+        <tr>
+          <td>{{ i.day }}</td>
+          <td>{{ i.time }}</td>
+          <td>{{ i.describe }}</td>
+          <td><a href="delete/{{i.id}}">Delete</a></td>
+        </tr>
+        {% endfor %} {% else %}
+        <td colspan="4">No Bookings</td>
+        {% endif %}
+      </table>
+
+      <table border="1">
+        <tr class="head">
+          <th colspan="4"><h2>Seminar Hall</h2></th>
+        </tr>
+        <tr>
+          <th>Date</th>
+          <th>Time</th>
+          <th>Description</th>
+          <th>Action</th>
+        </tr>
+        {% if bookSemi %} {% for i in bookSemi %}
+        <tr>
+          <td>{{ i.day }}</td>
+          <td>{{ i.time }}</td>
+          <td>{{ i.describe }}</td>
+          <td><a href="delete/{{i.id}}">Delete</a></td>
+        </tr>
+        {% endfor %} {% else %}
+        <td colspan="4">No Bookings</td>
+        {% endif %}
+      </table>
+
+      <table border="1">
+        <tr class="head">
+          <th colspan="4"><h2>Sports Ground</h2></th>
+        </tr>
+        <tr>
+          <th>Date</th>
+          <th>Time</th>
+          <th>Description</th>
+          <th>Action</th>
+        </tr>
+        {% if bookGround %} {% for i in bookGround %}
+        <tr>
+          <td>{{ i.day }}</td>
+          <td>{{ i.time }}</td>
+          <td>{{ i.describe }}</td>
+          <td><a href="delete/{{i.id}}">Delete</a></td>
+        </tr>
+        {% endfor %} {% else %}
+        <td colspan="4">No Bookings</td>
+        {% endif %}
+      </table>
+    </div>
+  </body>
+</html>
+{% endcomment %}

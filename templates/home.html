@@ -1,0 +1,104 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book</title>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}" />
+    <script src="cardself.js"></script>
+  </head>
+  <body>
+
+
+    <div class="navbaar">
+      <img
+        src="{% static 'images/DSC_logo.png' %}"
+        alt="image..."
+        width="86"
+        height="86"
+        alt=""
+      />
+      <h3>DYAL SINGH COLLEGE</h3>
+      <div class="du">
+        <img src="{% static 'images/DU_logo.png' %}" width="86" height="86" />
+      </div>
+    </div>
+      <button class="buttn2" onclick="window.location.href='{% url 'Logout Page' %}'">Logout</button>
+      <button class="buttn2" onclick="window.location.href='{% url 'User Booking History' %}'">Your Activity</button>
+      {% comment %} <ul class="cardinRow ">
+      <li><button class="buttn" style="border-radius: 5px;" onclick="window.location.href='{% url 'Logout Page' %}'">Logout</button></li>
+      </ul> {% endcomment %}
+    </div>
+
+
+    <div class="cardinRow" style="margin-top: 55px;">
+      <div class="card">
+        <img class="imag" src="{% static 'images/auditorium.jpg' %}" alt="image..." />
+        <div style="padding padding-top: 5px;margin: 10px;">
+          <h2>
+            Auditorium
+            <button
+              class="buttn "
+              onclick="window.location.href='{% url 'Booking Auditorium' %}'"
+            >
+              BOOK
+            </button>
+          </h2>
+        </div>
+      </div>
+
+      <div class="card">
+        <img class="imag" src="{% static 'images/amphitheatre.jpeg' %}" alt="image..." />
+        <div style="padding padding-top: 5px;margin: 10px;">
+          <h2>
+            Amphitheatre
+            <button
+              class="buttn"
+              onclick="window.location.href='{% url 'Booking Amphitheatre' %}'"
+            >
+              BOOK
+            </button>
+          </h2>
+        </div>
+      </div>
+
+
+      <div class="card">
+        <img class="imag" src="{% static 'images/seminar.jpeg' %}" alt="image..." />
+        <div style="padding padding-top: 5px;margin: 10px;vertical-align: middle;">
+          <h2>
+            Seminar Hall
+            <button
+              class="buttn"
+              onclick="window.location.href='{% url 'Booking Seminar Hall' %}'"
+            >
+              BOOK
+            </button>
+          </h2>
+        </div>
+      </div>
+
+
+      <div class="card">
+        <img class="imag" src="{% static 'images/sports.jpeg' %}" alt="image..." />
+        <div style="padding padding-top: 5px;margin: 10px;">
+          <h2>
+            Sports Ground
+            <button
+              class="buttn"
+              onclick="window.location.href='{% url 'Booking Sports Ground' %}'"
+            >
+              BOOK
+            </button>
+          </h2>
+        </div>
+      </div>
+
+          </h2>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
