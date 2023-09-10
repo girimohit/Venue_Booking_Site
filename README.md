@@ -1,9 +1,8 @@
-# venue-booking-site
-Django project 
-• Just after cloning the code:
-• setup an venv
-• pip install django
-• pip install django-debug-toolbar
-• pip install mysqlclient
-Then, change the database information 
+# venue-booking-site<br>
+### Just after cloning the code: <br>
+• setup an venv <br>
+• pip install django<br>
+• pip install django-debug-toolbar<br>
+• pip install mysqlclient<br>
+Then, change the database information<br><br>
 run : python manage.py runserver 
