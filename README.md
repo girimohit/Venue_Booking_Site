@@ -1,4 +1,5 @@
-# venue-booking-site<br>
+# VENUE BOOKING<br>
+___
 ### Just after cloning the code: <br>
 • setup an venv <br>
 • pip install django<br>
