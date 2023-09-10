@@ -1,5 +1,6 @@
 # VENUE BOOKING<br>
-### Just after cloning the code:___
+### Just after cloning the code:
+___
 • setup an venv <br>
 • pip install django<br>
 • pip install django-debug-toolbar<br>
